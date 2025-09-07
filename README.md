@@ -2,9 +2,16 @@
 Instances used in Dr. Judy Goldsmith's research group on **Dynamic Skill Coalition Formation Games (DSCG)**.  
 
 These instances were created to support experiments in **Temporal Team Formation Games (TTFG)** and related coalition formation research.  
-They provide reproducible benchmarks for evaluating algorithms that assign agents with heterogeneous skills, preferences, and histories to dynamic tasks over time.  
+They provide reproducible benchmarks for evaluating algorithms that assign agents with heterogeneous skills, preferences, and histories to dynamic tasks over time.
+
+This repository is part of ongoing research efforts, including:
+
+- **Cameron Egbert’s M.S. thesis**, *Temporal Team Formation Games with Dynamic Preferences*, available through the University of Kentucky's repository:  
+  [https://uknowledge.uky.edu/cs_etds/151/](https://uknowledge.uky.edu/cs_etds/151/)  
+- An accepted paper at the **Advances in Preference Handling (M-PREF) Workshop**, ECAI 2025.
 
 This repository is intended to:
+
 - Publish the exact **instances** used in grant proposals and research experiments.  
 - Provide a minimal **Python scaffold** (`usage.py` + `objectLoader.py`) so others can load, inspect, and extend these instances.  
 - Serve as a **foundation for future algorithmic extensions**, where researchers can add their own schedulers, learning agents, or evaluation pipelines.  
@@ -30,11 +37,11 @@ This repository is intended to:
 
 ## Usage
 Load a directory of instances and print a simple summary:
-```
+```bash
 python usage.py --instances-dir "./Instances/M-PREF2025_instances/10-agents-biasSTDEV-0" --index 0
 ```
 
-example output:
+Example output:
 ```
 ==== TTFG Minimal Scaffold ====
 Loaded instance from: C:\Users\aaron\Documents\DSCG-instances\Instances\M-PREF2025_instances\10-agents-biasSTDEV-0
